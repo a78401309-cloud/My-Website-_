@@ -1,0 +1,925 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title data-i18n="page_title">Opito — Developer & Creator</title>
+  <meta
+    name="description"
+    content="Opito — Discord bot developer, web developer, and community specialist. Building custom bots, modern websites, and professional Discord communities."
+  />
+  <meta
+    name="keywords"
+    content="Opito, Discord bot developer, web developer, Discord.js, Node.js, Minecraft servers"
+  />
+  <meta name="author" content="Opito" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="color-scheme" content="dark light" />
+
+  <meta property="og:title" content="Opito — Developer & Creator" />
+  <meta
+    property="og:description"
+    content="Discord bot development, modern websites, and professional community solutions."
+  />
+  <meta property="og:type" content="website" />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://opito.dev" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111111'/%3E%3Ctext x='16' y='23' font-size='22' text-anchor='middle' fill='%23eeeeee' font-family='Arial'%3EO%3C/text%3E%3C/svg%3E"
+  />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-label="Loading website">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <div class="nav-content">
+      <a href="#home" class="logo" aria-label="Opito home">Opito<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button
+          class="theme-btn"
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+          title="Toggle theme"
+        >☀️</button>
+
+        <button
+          class="lang-btn"
+          id="lang-toggle"
+          type="button"
+          aria-label="Switch language"
+          title="Switch language"
+        >AR</button>
+
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" aria-labelledby="hero-title">
+      <div class="hero">
+        <div class="hero-profile">
+          <img
+            id="discord-avatar"
+            src="https://cdn.discordapp.com/embed/avatars/0.png"
+            alt="Opito Discord avatar"
+            class="avatar"
+            width="120"
+            height="120"
+          />
+
+          <div
+            id="discord-presence"
+            class="discord-presence"
+            aria-live="polite"
+            aria-label="Discord presence"
+          >
+            <span
+              id="discord-status-dot"
+              class="discord-status-dot offline"
+              aria-hidden="true"
+            ></span>
+
+            <div class="discord-presence-info">
+              <span id="discord-status-text">Loading Discord status...</span>
+              <span id="discord-activity-text">Connecting to Discord</span>
+            </div>
+
+            <span class="discord-logo">Discord</span>
+          </div>
+        </div>
+
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Developer &amp; Creator
+        </div>
+
+        <h1 id="hero-title">
+          <span data-i18n="hero_greeting">Hello, I'm</span>
+          <span class="gradient-text">Opito</span>
+        </h1>
+
+        <p class="hero-sub">
+          <span class="typewriter" data-i18n="hero_sub"></span>
+          <span class="cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero-description">
+          Building Discord bots, modern websites, and digital experiences
+          focused on quality, performance, and simplicity.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary" data-i18n="hero_work">
+            View My Work
+          </a>
+
+          <a href="#contact" class="btn-secondary" data-i18n="hero_contact">
+            Get In Touch
+          </a>
+        </div>
+
+        <a href="#about" class="hero-scroll" aria-label="Scroll to About section">
+          <span class="hero-scroll-line"></span>
+          <span>SCROLL TO EXPLORE</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">INTRODUCTION</span>
+          <h2 class="section-title" id="about-heading" data-i18n="about_title">
+            About Me
+          </h2>
+          <p class="section-description">
+            A little about what I do and what I build.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-main-card">
+            <div class="about-main-heading">
+              <span class="about-main-icon" aria-hidden="true">⌘</span>
+              <div>
+                <span class="about-eyebrow">ABOUT ME</span>
+                <h3>Discord Bot Developer &amp; Server Specialist</h3>
+              </div>
+            </div>
+
+            <p>
+              I'm a Discord bot developer and server management specialist
+              focused on building custom bots, automating server tasks, and
+              creating professional Discord communities.
+            </p>
+
+            <p>
+              I aim to deliver reliable, secure, and efficient solutions
+              tailored to each community's needs, from moderation systems
+              and ticket bots to organized server infrastructure.
+            </p>
+
+            <div class="about-main-footer">
+              <span class="about-tag">Discord.js</span>
+              <span class="about-tag">Automation</span>
+              <span class="about-tag">Web Development</span>
+            </div>
+          </article>
+
+          <div class="about-services">
+            <article class="about-service-card">
+              <div class="about-service-icon" aria-hidden="true">01</div>
+              <div class="about-service-content">
+                <h3>Bot Development</h3>
+                <p>
+                  Custom Discord bots with moderation, ticket systems,
+                  automation, and community-focused features.
+                </p>
+              </div>
+              <span class="about-card-number">01</span>
+            </article>
+
+            <article class="about-service-card">
+              <div class="about-service-icon" aria-hidden="true">02</div>
+              <div class="about-service-content">
+                <h3>Server Management</h3>
+                <p>
+                  Professional Discord server setup, role permissions,
+                  channel organization, and security configuration.
+                </p>
+              </div>
+              <span class="about-card-number">02</span>
+            </article>
+
+            <article class="about-service-card">
+              <div class="about-service-icon" aria-hidden="true">03</div>
+              <div class="about-service-content">
+                <h3>Web Development</h3>
+                <p>
+                  Responsive websites and web solutions designed to provide
+                  a clean, professional online presence.
+                </p>
+              </div>
+              <span class="about-card-number">03</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">TECHNICAL EXPERTISE</span>
+          <h2 class="section-title" id="skills-heading" data-i18n="skills_title">
+            Skills
+          </h2>
+          <p class="section-description">
+            Technologies and tools I work with.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-item">
+            <div class="skill-info"><span>HTML / CSS</span><span class="skill-percentage">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>JavaScript</span><span class="skill-percentage">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>React</span><span class="skill-percentage">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Node.js</span><span class="skill-percentage">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Python</span><span class="skill-percentage">60%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info"><span>Git</span><span class="skill-percentage">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" aria-labelledby="services-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">WHAT I OFFER</span>
+          <h2 class="section-title" id="services-heading" data-i18n="services_title">
+            Services
+          </h2>
+          <p class="section-description">
+            Practical solutions built around your needs.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">01</div>
+            <span class="service-card-label">DISCORD</span>
+            <h3 data-i18n="service_bots_title">Discord Bots</h3>
+            <p data-i18n="service_bots_desc">
+              Custom Discord bots with moderation, ticket systems,
+              automation, and useful community features.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">02</div>
+            <span class="service-card-label">WEB</span>
+            <h3 data-i18n="service_web_title">Web Development</h3>
+            <p data-i18n="service_web_desc">
+              Modern, responsive websites and web applications built
+              with a focus on performance and usability.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">03</div>
+            <span class="service-card-label">COMMUNITY</span>
+            <h3 data-i18n="service_setup_title">Discord Server Setup</h3>
+            <p data-i18n="service_setup_desc">
+              Organized channels, roles, permissions, ticket systems,
+              and moderation tools for Discord communities.
+            </p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">04</div>
+            <span class="service-card-label">CONFIGURATION</span>
+            <h3 data-i18n="service_config_title">Bot Configuration</h3>
+            <p data-i18n="service_config_desc">
+              Configuring existing Discord bots, commands, permissions,
+              and features to match your community's needs.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Server Experience -->
+    <section id="projects" class="server-experience-section" aria-labelledby="projects-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">COMMUNITY EXPERIENCE</span>
+          <h2 class="section-title" id="projects-heading" data-i18n="projects_title">
+            Server Experience
+          </h2>
+          <p class="section-description" data-i18n="servers_description">
+            Communities I've contributed to and helped manage.
+          </p>
+        </div>
+
+        <div class="projects-grid server-projects-grid">
+          <!-- ZetrexMC -->
+          <article class="project-card server-project-card server-card-animated">
+            <div class="server-card-topline">
+              <span class="server-card-label" data-i18n="server_network">
+                MINECRAFT NETWORK
+              </span>
+              <span class="server-index">01</span>
+            </div>
+
+            <div class="server-title-row">
+              <div>
+                <span class="server-kicker" data-i18n="server_java_bedrock">
+                  JAVA &amp; BEDROCK
+                </span>
+                <h3>ZetrexMC</h3>
+              </div>
+              <span class="server-status-badge">
+                <span class="server-status-dot"></span>
+                <span data-i18n="server_staff_team">Staff Team</span>
+              </span>
+            </div>
+
+            <p class="server-description" data-i18n="zetrex_description">
+              Contributing as a Senior Staff member and helping maintain a
+              professional, enjoyable Minecraft community.
+            </p>
+
+            <div class="server-role">
+              <span class="server-role-icon" aria-hidden="true">✦</span>
+              <div>
+                <small data-i18n="server_my_role">MY ROLE</small>
+                <strong>Senior Staff</strong>
+              </div>
+            </div>
+
+            <div class="server-ip-list">
+              <div class="server-ip-item">
+                <div class="server-ip-info">
+                  <span class="server-ip-label">
+                    <span aria-hidden="true">💻</span>
+                    <span data-i18n="server_java_ip">Java IP</span>
+                  </span>
+                  <code class="server-ip-value">play.zetrex.net</code>
+                </div>
+                <button
+                  class="copy-ip-btn"
+                  type="button"
+                  data-copy="play.zetrex.net"
+                  aria-label="Copy ZetrexMC Java IP"
+                  data-copy-label="Copy"
+                  data-copied-label="Copied!"
+                >
+                  <span class="copy-icon" aria-hidden="true">⧉</span>
+                  <span data-i18n="server_copy">Copy</span>
+                </button>
+              </div>
+
+              <div class="server-ip-item">
+                <div class="server-ip-info">
+                  <span class="server-ip-label">
+                    <span aria-hidden="true">📱</span>
+                    <span data-i18n="server_bedrock_ip">Bedrock IP</span>
+                  </span>
+                  <code class="server-ip-value">bedrock.zetrex.net</code>
+                </div>
+                <button
+                  class="copy-ip-btn"
+                  type="button"
+                  data-copy="bedrock.zetrex.net"
+                  aria-label="Copy ZetrexMC Bedrock IP"
+                  data-copy-label="Copy"
+                  data-copied-label="Copied!"
+                >
+                  <span class="copy-icon" aria-hidden="true">⧉</span>
+                  <span data-i18n="server_copy">Copy</span>
+                </button>
+              </div>
+
+              <div class="server-port-row">
+                <span data-i18n="server_bedrock_port">Bedrock Port</span>
+                <code>19132</code>
+                <button
+                  class="copy-port-btn"
+                  type="button"
+                  data-copy="19132"
+                  data-i18n="server_copy_port"
+                  aria-label="Copy ZetrexMC Bedrock port"
+                >Copy Port</button>
+              </div>
+            </div>
+
+            <a
+              href="https://discord.gg/zetrexmc"
+              class="server-discord-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join ZetrexMC Discord"
+            >
+              <span data-i18n="server_join_discord">Join Discord</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <!-- RavixMC -->
+          <article class="project-card server-project-card server-card-animated">
+            <div class="server-card-topline">
+              <span class="server-card-label" data-i18n="server_network">
+                MINECRAFT NETWORK
+              </span>
+              <span class="server-index">02</span>
+            </div>
+
+            <div class="server-title-row">
+              <div>
+                <span class="server-kicker" data-i18n="server_java_bedrock">
+                  JAVA &amp; BEDROCK
+                </span>
+                <h3>RavixMC</h3>
+              </div>
+              <span class="server-status-badge">
+                <span class="server-status-dot"></span>
+                <span data-i18n="server_staff_team">Staff Team</span>
+              </span>
+            </div>
+
+            <p class="server-description" data-i18n="ravix_description">
+              Managing staff operations, Discord organization, and community
+              management to help keep the server organized.
+            </p>
+
+            <div class="server-roles">
+              <div class="server-role">
+                <span class="server-role-icon" aria-hidden="true">✦</span>
+                <div>
+                  <small data-i18n="server_my_role">MY ROLE</small>
+                  <strong>Admin</strong>
+                </div>
+              </div>
+
+              <div class="server-role">
+                <span class="server-role-icon" aria-hidden="true">✦</span>
+                <div>
+                  <small data-i18n="server_my_role">MY ROLE</small>
+                  <strong>Staff Manager</strong>
+                </div>
+              </div>
+
+              <div class="server-role">
+                <span class="server-role-icon" aria-hidden="true">✦</span>
+                <div>
+                  <small data-i18n="server_my_role">MY ROLE</small>
+                  <strong>Discord Manager</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="server-ip-list">
+              <div class="server-ip-item">
+                <div class="server-ip-info">
+                  <span class="server-ip-label">
+                    <span aria-hidden="true">🌐</span>
+                    <span data-i18n="server_java_bedrock_ip">Java &amp; Bedrock IP</span>
+                  </span>
+                  <code class="server-ip-value">Ravixmc.dpdns.org</code>
+                </div>
+                <button
+                  class="copy-ip-btn"
+                  type="button"
+                  data-copy="Ravixmc.dpdns.org"
+                  aria-label="Copy RavixMC server IP"
+                  data-copy-label="Copy"
+                  data-copied-label="Copied!"
+                >
+                  <span class="copy-icon" aria-hidden="true">⧉</span>
+                  <span data-i18n="server_copy">Copy</span>
+                </button>
+              </div>
+
+              <div class="server-port-row">
+                <span data-i18n="server_port">Server Port</span>
+                <code>25594</code>
+                <button
+                  class="copy-port-btn"
+                  type="button"
+                  data-copy="25594"
+                  data-i18n="server_copy_port"
+                  aria-label="Copy RavixMC server port"
+                >Copy Port</button>
+              </div>
+            </div>
+
+            <a
+              href="https://discord.gg/rmcn"
+              class="server-discord-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Join RavixMC Discord"
+            >
+              <span data-i18n="server_join_discord">Join Discord</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">COMMON QUESTIONS</span>
+          <h2 class="section-title" id="faq-heading" data-i18n="faq_title">
+            FAQ
+          </h2>
+          <p class="section-description">
+            Answers to some frequently asked questions.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span data-i18n="faq_q1">How long does a typical project take?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1">
+                It depends on the complexity. A basic website or bot can
+                take 3–7 days, while larger projects may take 2–4 weeks.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span data-i18n="faq_q2">What technologies do you use?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2">
+                I work with JavaScript, Python, React, Node.js, Discord.js,
+                and modern web technologies.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span data-i18n="faq_q3">Do you offer support after delivery?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3">
+                Yes! I provide support based on the project and maintenance
+                requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span data-i18n="faq_q4">How can I pay for your services?</span>
+              <span class="faq-arrow" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">
+                We can discuss suitable payment methods based on your
+                preference and location before starting the project.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-container">
+        <div class="section-heading">
+          <span class="section-eyebrow">LET'S CONNECT</span>
+          <h2 class="section-title" id="contact-heading" data-i18n="contact_title">
+            Get In Touch
+          </h2>
+          <p class="contact-text" data-i18n="contact_text">
+            Have a project in mind or just want to say hi? Let's connect.
+          </p>
+        </div>
+
+        <div class="contact-socials">
+          <a
+            href="https://github.com/hfueihgeih"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link sm-github"
+            aria-label="Visit my GitHub profile"
+          >
+            <span class="social-link-icon" aria-hidden="true">GH</span>
+            <span>GitHub</span>
+            <span class="social-link-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            href="https://discord.com/users/1306019342629998643"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link sm-discord"
+            aria-label="Visit my Discord profile"
+          >
+            <span class="social-link-icon" aria-hidden="true">DC</span>
+            <span>Discord</span>
+            <span class="social-link-arrow" aria-hidden="true">↗</span>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@_muslim038"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-link sm-tiktok"
+            aria-label="Visit my TikTok profile"
+          >
+            <span class="social-link-icon" aria-hidden="true">TK</span>
+            <span>TikTok</span>
+            <span class="social-link-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formsubmit.co/ismail1426419812@gmail.com"
+          method="POST"
+        >
+          <div class="contact-form-heading">
+            <h3>Send a Message</h3>
+            <p>Tell me a little about your project.</p>
+          </div>
+
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from the Opito website"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="text"
+            name="_honey"
+            class="form-honeypot"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
+          />
+
+          <div class="form-group">
+            <label for="contact-name" data-i18n="form_name">Your Name</label>
+            <input
+              id="contact-name"
+              type="text"
+              name="name"
+              data-i18n-placeholder="form_name"
+              placeholder="Your Name"
+              autocomplete="name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email" data-i18n="form_email">Your Email</label>
+            <input
+              id="contact-email"
+              type="email"
+              name="email"
+              data-i18n-placeholder="form_email"
+              placeholder="Your Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message" data-i18n="form_message">Your Message</label>
+            <textarea
+              id="contact-message"
+              rows="5"
+              name="message"
+              data-i18n-placeholder="form_message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            <span data-i18n="form_submit">Send Message</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <a href="#home" class="footer-logo">Opito<span>.</span></a>
+
+      <p>
+        &copy; 2026 Opito.
+        <span data-i18n="footer_rights">All rights reserved.</span>
+      </p>
+
+      <div class="footer-links">
+        <a href="https://github.com/hfueihgeih" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://discord.com/users/1306019342629998643" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a href="https://www.tiktok.com/@_muslim038" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <button
+    id="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+  >↑</button>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+  <script src="discord-status.js"></script>
+
+  <!-- Server Experience: animations and copy IP -->
+  <script>
+    (() => {
+      const copyButtons = document.querySelectorAll('[data-copy]');
+
+      copyButtons.forEach((button) => {
+        button.addEventListener('click', async () => {
+          const value = button.getAttribute('data-copy');
+          if (!value) return;
+
+          const label = button.querySelector('[data-i18n]')
+            || button.querySelector('span:last-child');
+
+          const originalText = label
+            ? label.textContent
+            : button.textContent;
+
+          try {
+            if (navigator.clipboard && window.isSecureContext) {
+              await navigator.clipboard.writeText(value);
+            } else {
+              const textarea = document.createElement('textarea');
+              textarea.value = value;
+              textarea.style.position = 'fixed';
+              textarea.style.opacity = '0';
+              document.body.appendChild(textarea);
+              textarea.select();
+
+              const copied = document.execCommand('copy');
+              textarea.remove();
+
+              if (!copied) throw new Error('Copy failed');
+            }
+
+            if (label) {
+              label.textContent =
+                button.hasAttribute('data-copied-label')
+                  ? button.getAttribute('data-copied-label')
+                  : 'Copied!';
+            } else {
+              button.textContent = 'Copied!';
+            }
+
+            button.classList.add('copied');
+
+            window.setTimeout(() => {
+              if (label) {
+                label.textContent = originalText;
+              } else {
+                button.textContent = originalText;
+              }
+
+              button.classList.remove('copied');
+            }, 1600);
+          } catch (error) {
+            console.error('Could not copy server address:', error);
+
+            if (typeof showToast === 'function') {
+              showToast(
+                document.documentElement.lang === 'ar'
+                  ? 'تعذر النسخ تلقائيًا. انسخ العنوان يدويًا.'
+                  : 'Could not copy. Please copy the address manually.'
+              );
+            }
+          }
+        });
+      });
+
+      const cards = document.querySelectorAll('.server-card-animated');
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add('server-card-visible');
+            observer.unobserve(entry.target);
+          });
+        }, {
+          threshold: 0.12
+        });
+
+        cards.forEach((card, index) => {
+          card.style.setProperty('--server-delay', `${index * 140}ms`);
+          observer.observe(card);
+        });
+      } else {
+        cards.forEach((card) => {
+          card.classList.add('server-card-visible');
+        });
+      }
+
+      // Keep the mobile navigation accessibility state in sync.
+      const menuButton = document.querySelector('.menu-btn');
+      const navigation = document.querySelector('.nav-links');
+
+      if (menuButton && navigation) {
+        menuButton.addEventListener('click', () => {
+          menuButton.setAttribute(
+            'aria-expanded',
+            navigation.classList.contains('active') ? 'true' : 'false'
+          );
+        });
+
+        navigation.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            menuButton.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+  </script>
+
+  <!-- Disable right-click and common DevTools shortcuts -->
+  <script>
+    document.addEventListener('contextmenu', function (event) {
+      event.preventDefault();
+    });
+
+    document.addEventListener('keydown', function (event) {
+      const key = event.key.toLowerCase();
+
+      if (
+        key === 'f12' ||
+        (event.ctrlKey && event.shiftKey && ['i', 'j', 'c'].includes(key)) ||
+        (event.ctrlKey && key === 'u')
+      ) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    });
+  </script>
+</body>
+</html>
